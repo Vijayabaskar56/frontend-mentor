@@ -8,6 +8,7 @@
   
   <title>Frontend Mentor | Tip calculator app</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -17,25 +18,35 @@
 <body>
   <h1>SPIL <br>TTER</h1>
   <div class="parent">
+    <div class="child1">
+      <div class="bill-section">
   <form action="" title="Bill">
     <label for="number">Bill</label>
     <input type="text" id="input" value="0">
   </form>
-
-  <p>Select Tip %</p>
+      </div>
+      <p>Select Tip %</p>
+<div class="tip-section">
+  <div class="row1">
   <input type="button" class="btn" id="btn-one" value="5%">
   <input type="button" class="btn" id="btn-two" value="10%">
   <input type="button" class="btn" id="btn-three" value="15%">
+  </div>
+  <div class="row1">
   <input type="button" class="btn" id="btn-four" value="25%">
   <input type="button" class="btn" id="btn-five" value="50%">
-  <input type="number" class="btn" id="btn-input" name="Custom" id="Custom-input">
-
+  <input type="button" class="btn" id="btn-five" value="dmy">
+  </div>
+  <!-- <input type="number" class="btn" id="btn-input" name="Custom" id="Custom-input"> -->
+</div>
+<div class="people-section">
   <form action="" title="Number of People">
     <label for="number">Number of People</label>
     <input type="text" id="input" value="0">
   </form>
-
-  <div class="child">
+</div>
+  </div>
+  <div class="child2">
   <h6 class="tip">Tip Amount</h6>
     <p>/ person</p>
     <p class="output-tip">$0.00</p>

@@ -20,6 +20,7 @@ body {
     border: 0;
     position: relative;
     scroll-behavior: none;
+    font-family: 'Space Mono', monospace;
 }
 
 div {
@@ -29,20 +30,56 @@ div {
 
 h1 {
     text-align: center;
+    font-size:x-small;
+    color: #597c7e;
 }
 
 .parent {
-    margin-left: 200px;
-    height: 400px;
-    width: 500px;
+    height: 40vh;
+    width: 60vw;
+    margin-left: 20%;
     display: flex;
     justify-content: center;
 }
 
+.child1,.child2 {
+    margin: 10px;
+}
+
+.row1 {
+    display: flex;
+}
+
+.row2 {
+    
+}
+
+.tip-section,.btn {
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-template-rows: 20% 20% 20%;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+#Custom-input {
+    display: inline;
+}
+
+
+
+.child1{
+    width: 50%;
+}
 
 .btn {
-    align-items: center;
-    width: 30px;
-    height: 20px;
-    display: block;
+
+}
+
+
+.attribution {
+    display: absolute;
+    transform: translateY(200px)
 }
