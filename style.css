@@ -50,15 +50,18 @@ h1 {
     display: flex;
 }
 
-.row2 {
-    
+
+
+#select-tip {
+    margin: 0;
+    margin-top: 10px;
 }
 
-.tip-section,.btn {
+
+.tip-section {
     /* display: flex; */
     display: grid;
-    grid-template-columns: 20% 20% 20%;
-    grid-template-rows: 20% 20% 20%;
+    grid-template-rows: 2fr;
     justify-content: space-evenly;
     flex-direction: row;
 }
@@ -74,8 +77,21 @@ h1 {
     width: 50%;
 }
 
-.btn {
+.child2{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: #102702;
+    color: whitesmoke;
+    border-radius: 7px;
+}
 
+.person {
+    font-size: 0.7rem;
+}
+
+.btn {
+    margin: 0 20px 0 20px;
 }
 
 
