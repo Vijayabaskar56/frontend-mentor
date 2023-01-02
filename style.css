@@ -26,6 +26,7 @@ body {
 div {
     box-sizing: border-box;
     border: black 1px dotted ;
+    background-color: #fbffff;
 }
 
 h1 {
@@ -35,18 +36,19 @@ h1 {
 }
 
 .parent {
-    height: 40vh;
+    height: 50vh;
     width: 60vw;
     margin-left: 20%;
     display: flex;
     justify-content: center;
+    border-radius: 10px;
 }
 
 .child1,.child2 {
     margin: 10px;
 }
 
-.row1 {
+.row1,.row2 {
     display: flex;
 }
 
@@ -71,6 +73,24 @@ h1 {
     display: inline;
 }
 
+#input,#input[type=text] {
+    display: block;
+    width: 80%;
+    text-align: end;
+    color: #2c5d61;
+    font-size: large;
+    font-weight: bold;
+    margin: auto;
+    background-color: #f3f8fb;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    outline: none;
+}
+
+#input[type=text]:focus {
+    border: 2px solid #59a99f;
+}
 
 
 .child1{
@@ -81,7 +101,7 @@ h1 {
     width: 50%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    background-color: #102702;
+    background-color: #00474b;
     color: whitesmoke;
     border-radius: 7px;
 }
@@ -91,7 +111,27 @@ h1 {
 }
 
 .btn {
-    margin: 0 20px 0 20px;
+    margin: 0 5px 0 5px;
+    padding: 7px 25px;
+    background-color: #00474b;
+    color: #fbffff;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 2.5px;
+}
+
+#btn-input {
+    width: 11%;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fbffff;
+}
+#btn-reset {
+    background-color: #0d686d
 }
 
 
