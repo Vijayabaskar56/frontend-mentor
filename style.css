@@ -29,10 +29,21 @@ div {
     background-color: #fbffff;
 }
 
+.bill-session,.tip-section,.people-session {
+    padding: 15px;
+}
+
 h1 {
     text-align: center;
     font-size:x-small;
     color: #597c7e;
+}
+
+label,#select-tip {
+    font-size: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+    color: #0d686d;
 }
 
 .parent {
@@ -75,7 +86,7 @@ h1 {
 
 #input,#input[type=text] {
     display: block;
-    width: 80%;
+    width: 95%;
     text-align: end;
     color: #2c5d61;
     font-size: large;
@@ -111,7 +122,7 @@ h1 {
 }
 
 .btn {
-    margin: 0 5px 0 5px;
+    margin: 0 5px 5px 5px;
     padding: 7px 25px;
     background-color: #00474b;
     color: #fbffff;
@@ -120,6 +131,15 @@ h1 {
     text-decoration: none;
     font-size: 16px;
     border-radius: 2.5px;
+}
+
+.btn:hover {
+    cursor: hand;
+    background-color: #9ee8df;
+}
+
+.btn:active {
+    background-color: #2ac4b0;
 }
 
 #btn-input {
@@ -131,7 +151,8 @@ h1 {
     color: #fbffff;
 }
 #btn-reset {
-    background-color: #0d686d
+    background-color: #0d686d;
+    width: 100%;
 }
 
 
