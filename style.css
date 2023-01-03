@@ -25,7 +25,7 @@ body {
 
 div {
     box-sizing: border-box;
-    border: black 1px dotted ;
+    /* border: black 1px dotted ; */
     background-color: #fbffff;
 }
 
@@ -47,9 +47,10 @@ label,#select-tip {
 }
 
 .parent {
-    height: 50vh;
+    height: 55vh;
     width: 60vw;
     margin-left: 20%;
+    padding: 10px;
     display: flex;
     justify-content: center;
     border-radius: 10px;
@@ -77,6 +78,8 @@ label,#select-tip {
     grid-template-rows: 2fr;
     justify-content: space-evenly;
     flex-direction: row;
+    padding: 10px;
+    padding-bottom: 5px;
 }
 
 
@@ -111,14 +114,40 @@ label,#select-tip {
 .child2{
     width: 50%;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
     background-color: #00474b;
     color: whitesmoke;
     border-radius: 7px;
 }
 
+
 .person {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    margin: 0;
+    color: #5e9397;
+}
+
+.tip,.total {
+    margin-left: 23px;
+    margin-top: 30px;
+    font-size: 0.6rem;
+}
+
+.total{
+    padding-top: 7%;
+    margin-top: 0%;
+}
+
+.output {
+    color: #2eb8a8;
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+#doller {
+    margin-top: 0%;
 }
 
 .btn {
@@ -133,12 +162,16 @@ label,#select-tip {
     border-radius: 2.5px;
 }
 
-.btn:hover {
-    cursor: hand;
+#btn-reset {
+    color: #00474b;
+}
+
+.btn:hover,#btn-reset:hover {
+    cursor:pointer;
     background-color: #9ee8df;
 }
 
-.btn:active {
+.btn:active,#btn-reset:active,.btn::after,#btn-reset::after {
     background-color: #2ac4b0;
 }
 
@@ -152,7 +185,11 @@ label,#select-tip {
 }
 #btn-reset {
     background-color: #0d686d;
-    width: 100%;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 
 
