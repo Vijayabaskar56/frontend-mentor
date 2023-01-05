@@ -13,7 +13,7 @@ let peopleCount = 0;
 let totalAmount = 0;
 
 // Add event listeners
-billInput.addEventListener('input', updateAmounts);
+billInput.addEventListener('input', updateAmounts);tipPercentage
 // peopleInput.addEventListener('input', updateAmounts);
 
 tipButtons.forEach(button => {
@@ -28,8 +28,8 @@ function updateAmounts() {
   billAmount = parseFloat(billInput.value);
   peopleCount = parseInt(peopleInput.value);
   
-  const tipAmount = billAmount / tipPercentage;
-  const totalAmount = billAmount + tipAmount;
+  const tipAmount = (tipPercentage / billAmount) * 100;
+  const totalAmount = (billAmount + tipAmount) / peopleCount;
   const amountPerPerson = totalAmount / peopleCount;
   
   tipAmountElement.textContent = tipAmount.toFixed(2);
@@ -42,6 +42,7 @@ document.querySelector('#btn-reset').addEventListener('click', event => {
   billInput.value = 0;
   peopleInput.value = 0;
   tipPercentage = 0;
+  tipAmount = 0;
+  totalAmount = 0;
   updateAmounts();
 });
-console.log(updateAmounts)

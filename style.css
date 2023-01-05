@@ -75,11 +75,12 @@ label,#select-tip {
 .tip-section {
     /* display: flex; */
     display: grid;
-    grid-template-rows: 2fr;
+    grid-template-rows: repeat(auto-fill, minmax(2fr));
     justify-content: space-evenly;
     flex-direction: row;
     padding: 10px;
     padding-bottom: 5px;
+    
 }
 
 
